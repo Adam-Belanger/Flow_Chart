@@ -23,7 +23,7 @@
     <ProjectGuid>{BCE592F8-D894-40B0-8301-D63C25058039}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Flowchart</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -135,6 +135,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Charges.h" />
+    <ClInclude Include="People.h" />
+    <ClInclude Include="Utilits.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Charges.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="People.c" />
+    <ClCompile Include="Utilites.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

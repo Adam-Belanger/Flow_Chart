@@ -1,6 +1,7 @@
 #ifndef PEOPLE_H
 #define PEOPLE_H
 #define STR_NAME_LNG "%99s"
+#define STR_SPACE "%s[^\n]"
 #pragma once
 //NAME: Devin Slauenwhite
 //DATE: Nov 30, 2017
@@ -21,6 +22,6 @@ struct Group {
   int pCount; //How many people in group
 };
 
-void addPerson(char* name, int age, struct Group* group);
+void addPerson(struct Group* group);
 
 #endif

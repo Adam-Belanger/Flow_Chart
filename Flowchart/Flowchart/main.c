@@ -8,5 +8,6 @@ int main() {
   struct Group group = { {"", 0}, {0,0,0,0,0,0} };
 
 
+  addPerson(&group);
   
 }
