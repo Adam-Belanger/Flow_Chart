@@ -12,13 +12,15 @@
 //For use in Group Struct only
 struct Person {
   char name[100]; //Person Name
-  int age; //Person Age
+  int* age; //Person Age
 };
 
 struct Group {
-  struct Person person[18]; //Max 18 people to a group
+  struct Person* person[18]; //Max 18 people to a group
   struct Receipt receipt; //Receipt for group of people
   int pCount; //How many people in group
 };
+
+void addPerson(char* name, int age, struct Group* group);
 
 #endif
