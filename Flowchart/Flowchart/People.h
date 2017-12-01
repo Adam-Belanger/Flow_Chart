@@ -1,3 +1,7 @@
+#ifndef PEOPLE_H
+#define PEOPLE_H
+#define STR_NAME_LNG "%99s"
+#pragma once
 //NAME: Devin Slauenwhite
 //DATE: Nov 30, 2017
 
@@ -5,12 +9,16 @@
 
 #include "Charges.h"
 
+//For use in Group Struct only
 struct Person {
   char name[100]; //Person Name
   int age; //Person Age
 };
 
 struct Group {
-  Person person[18]; //Max 18 people to a group
-  Receipt receipt; //Receipt for group of people
+  struct Person person[18]; //Max 18 people to a group
+  struct Receipt receipt; //Receipt for group of people
+  int pCount; //How many people in group
 };
+
+#endif
