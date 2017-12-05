@@ -109,3 +109,20 @@ double getValetPrice(int index) {
     break;
   }
 }
+//Alcoholic = 7.75; //INDEX: 0
+//Non_Alcoholic = 3.00; //INDEX: 1
+//Misc = 2.50; //INDEX: 2
+double getSnackPrice(int index){
+	switch (index)
+	{
+	case 0:
+		return Alcoholic;
+		break;
+	case 1:
+		return Non_Alcoholic;
+		break;
+	case 2:
+		return Misc;
+		break;
+	}
+}

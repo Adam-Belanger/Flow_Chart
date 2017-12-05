@@ -43,12 +43,21 @@ extern const double VIP_Matinee; //INDEX: 1
 extern const double STD_Evening; //INDEX: 2
 extern const double VIP_Evening; //INDEX: 3
 
-
 //STD_Matinee = 15.00; //INDEX: 0
 //VIP_Matinee = 25.00; //INDEX: 1
 //STD_Evening = 20.00; //INDEX: 2
 //VIP_Evening = 30.00; //INDEX: 3
 double getValetPrice(int index);
+
+//Snack Vendor
+extern const double Alcoholic; //INDEX: 0
+extern const double Non_Alcoholic //INDEX: 1
+extern const double Misc //INDEX: 2
+
+//Alcoholic = 7.75; //INDEX: 0
+//Non_Alcoholic = 3.00; //INDEX: 1
+//Misc = 2.50; //INDEX: 2
+double getSnackPrice(int index);
 
 struct Receipt {
   double Discounted;
