@@ -8,7 +8,11 @@
 
 //DESC: Vars for flowchart
 
+#include <string.h>
+#include <stdio.h>
 #include "Charges.h"
+#include "Utilits.h"
+
 
 //For use in Group Struct only
 struct Person {
@@ -17,11 +21,11 @@ struct Person {
 };
 
 struct Group {
-  struct Person* person[18]; //Max 18 people to a group
+  struct Person person[18]; //Max 18 people to a group
   struct Receipt receipt; //Receipt for group of people
   int pCount; //How many people in group
 };
 
-void addPerson(struct Group* group);
+void addPeople(struct Group* g);
 
 #endif

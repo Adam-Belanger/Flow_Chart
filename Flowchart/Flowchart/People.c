@@ -1,19 +1,18 @@
 #include "People.h"
-#include "Utilits.h"
 
-void addPerson(struct Group* group)
-{
-	char name[100];
-	int age;
+void addPeople(struct Group* g) {
+  int count = g->pCount;
+  char name[51] = "";
+  int age;
 
-	printf("What is your name? ");
-	loadStringToMem(STR_SPACE, &name);
+  printf("Hello there! What is your name? ");
+  loadStringToMem("%s", name);
 
-	printf("How old are you? ");
-	age = getInt();
+  printf("Hello %s, welcome to A-LA-Carte Entertainment. How old are you?", name);
+  age = getInt();
 
-	*group->person[0]->name = name;
-	*group->person[0]->age = age;
-
-	group->pCount++;
+  strcpy(g->person[count].name, name);
+  g->person[count].age = age;
+  //Add one to person count
+  count = g->pCount++;
 }
