@@ -6,5 +6,6 @@ void cleanBuffer();
 char getChar();
 int getInt();
 void loadStringToMem(char* format, char* location);
-
+void clear();
+void title();
 #endif

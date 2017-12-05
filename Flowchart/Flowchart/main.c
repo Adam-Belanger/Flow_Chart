@@ -2,20 +2,21 @@
 #include <stdio.h>
 #include "People.h"
 
-void title();
+
 
 
 int main() {
   struct Group group = { {"", 0}, {0,0,0,0,0,0} };
-  int total; // Number of people in group.
-
-  title();
+  int total; // Number of people in group
  
+  //Add People to event group
+  addPeople(&group);
+
+  clear();
+
+  displayGroup(&group);
 
   return 0;
 }
 
 
-void title() {
-  printf("---===A-LA-CARTE ENTERTAINMENT===---");
-}

@@ -27,5 +27,6 @@ struct Group {
 };
 
 void addPeople(struct Group* g);
+void displayGroup(struct Group* g);
 
 #endif

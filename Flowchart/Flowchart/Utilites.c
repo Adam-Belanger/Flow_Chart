@@ -22,3 +22,11 @@ void loadStringToMem(char* format, char* location) {
 	scanf(format, location);
 	cleanBuffer();
 }
+
+void clear() {
+  system("cls");
+}
+
+void title() {
+  printf("---===A-LA-CARTE ENTERTAINMENT===---");
+}
