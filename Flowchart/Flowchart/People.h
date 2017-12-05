@@ -17,7 +17,8 @@
 //For use in Group Struct only
 struct Person {
   char name[100]; //Person Name
-  int* age; //Person Age
+  int age; //Person Age
+  double cost; //Person spending
 };
 
 struct Group {

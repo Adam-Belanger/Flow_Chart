@@ -6,7 +6,7 @@
 
 
 int main() {
-  struct Group group = { {"", 0}, {0,0,0,0,0,0} };
+  struct Group group = { {"", 0, 0}, {0,0,0,0,0,0} };
   int total; // Number of people in group
  
   //Add People to event group

@@ -22,8 +22,23 @@ void addPeople(struct Group* g) {
 
     strcpy(g->person[count].name, name);
     g->person[count].age = age;
+   
+    if (age < 18) {
+      g->person[counter].cost += .50;
+      g->receipt.Cover += .50;
+    }
+    else if (age >= 65) {
+      g->person[counter].cost += 1.25;
+      g->receipt.Cover += 1.25;
+    }
+    else {
+      g->person[counter].cost += 5.50;
+      g->receipt.Cover += 5.50;
+    }
+    
     //Add one to person count
     count = ++g->pCount;
+
 
     clear();
   }
@@ -33,6 +48,7 @@ void displayGroup(struct Group* g){
   int count = g->pCount;
   int i = 0;
   for (i; i < count; i++) {
-    printf("Name: %5s | Age: %3d\n", g->person[i].name,g->person[i].age);
+    printf("Name: %5s | Age: %3d | Cost: %5.2f\n", g->person[i].name,g->person[i].age, g->person[i].cost);
+
   }
 }
